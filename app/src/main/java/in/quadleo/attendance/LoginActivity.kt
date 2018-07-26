@@ -23,7 +23,7 @@ class LoginActivity : AppCompatActivity() {
         setContentView(R.layout.activity_login)
         val pref=getSharedPreferences("event",0)
         val token=pref.getString("access_token","")
-        if(token!=null)
+        if(token!="")
         {
             startActivity(intentFor<EventsActivity>())
             finish()
