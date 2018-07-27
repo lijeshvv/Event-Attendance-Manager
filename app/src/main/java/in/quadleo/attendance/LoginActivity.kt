@@ -1,9 +1,9 @@
 package `in`.quadleo.attendance
 
+import `in`.quadleo.attendance.Event.EventsActivity
 import android.support.v7.app.AppCompatActivity
 import android.os.Bundle
 import android.support.v7.app.AlertDialog
-import android.util.Log
 import android.view.View
 import kotlinx.android.synthetic.main.activity_login.*
 import okhttp3.FormBody
@@ -14,7 +14,6 @@ import org.jetbrains.anko.intentFor
 import org.jetbrains.anko.toast
 import org.jetbrains.anko.uiThread
 import org.json.JSONObject
-import kotlin.math.log
 
 class LoginActivity : AppCompatActivity() {
 
